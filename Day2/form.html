@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        div{
+            background-color: wheat;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Form using just tags</h1>
+    <form action="table.html">
+        <label for="FirstName">First Name:</label>
+        <input type="text" placeholder="Enter First Name" required><br>
+        <label for="LastName">Last Name:</label>
+        <input type="text" placeholder="Enter Last name" required><br>
+        <label for="DOB">DOB</label>
+        <input type="date" placeholder="Enter DOB" required><br>
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gender" value="male" aria-label="male">Male
+        <input type="radio" name="gender" value="female" aria-label="female">Female
+        <input type="radio" name="gender" value="other" aria-label="other">Other <br>
+        <label for="E-Mail">E-Mail:</label>
+        <input type="email" name="" placeholder="Enter email" value="@gmail.com" required><br>
+        <label for="Password">Password:</label>
+        <input type="password" placeholder="Enter password" required> <br>
+        <label for="Password">Confirm Password:</label>
+        <input type="password" placeholder="Enter password" required> <br>
+        <label for="Password">Mobile Number:</label>
+        <input type="tel" placeholder="Enter mobile" required> <br><br>
+        <button type="submit">SignUp</button>
+        Already having an account <button type="submit">LogIn</button>
+    </form>
+    <div>
+    <h1>Form using tables(Today's Task)</h1>
+    
+        <table>
+            <tr>
+                <td><label for="FirstName">First Name:</label></td>
+                <td>
+                    <input type="text" placeholder="Enter First Name" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="LastName">Last Name:</label></td>
+                <td>
+                    <input type="text" placeholder="Enter Last name" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="DOB">DOB</label></td>
+                <td>
+                    <input type="date" placeholder="Enter DOB" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male" aria-label="male">Male
+                    <input type="radio" name="gender" value="female" aria-label="female">Female
+                    <input type="radio" name="gender" value="other" aria-label="other">Other <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="E-Mail">E-Mail:</label></td>
+                <td>
+                    <input type="email" name="" placeholder="Enter email" value="@gmail.com" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="Password">Password:</label></td>
+                <td>
+                    <input type="password" placeholder="Enter password" required> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Password">Confirm Password:</label></td>
+                <td>
+                    <input type="password" placeholder="Enter password" required> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Password">Mobile Number:</label></td>
+                <td>
+                    <input type="tel" placeholder="Enter mobile" required> <br>
+                </td>
+            </tr>
+
+        </table>
+    
+    <br>
+    <button type="submit">SignUp</button>
+    Already having an account <button type="submit">LogIn</button>
+</div>
+</body>
+
+</html>
