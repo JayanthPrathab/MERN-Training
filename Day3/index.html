@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Intro</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .thor {
+          background-color: teal;
+          width: 200px;
+          height: 200px;
+          display: inline-block;
+      }
+
+      .wanda {
+          background-color: springgreen;
+          width: 200px;
+          height: 200px;
+          display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <p style="background-color: violet; color: darkgreen;">This is inline styling</p>
+    <div>hello this is internal styling</div> -->
+    <div class="parent">
+      <div style="height: 200px; width: 200px; background-color: tomato; display: inline-block;">
+        <br /><br />Inline Styling 
+      </div>
+      <div class="thor"><br /><br />Internal Styling</div>
+
+      <div class="wanda">
+        <br /><br />
+        Style Succeeded
+      </div>
+      <div class="hawkeye">
+        <br /><br />
+        External Styling
+      </div>
+    </div>
+  </body>
+</html>
