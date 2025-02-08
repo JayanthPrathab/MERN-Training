@@ -1,0 +1,27 @@
+.iron{
+    background-color: tomato;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+.thor{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    float: right;
+}
+.hulk{
+    background-color: palegreen;
+    height: 200px;
+    width: 200px;
+}
+.fix{
+    position: fixed;
+    background-color:mediumslateblue;
+    text-align: center;
+    width: 1600px;
+    margin:-10px;
+    
+    
+}

@@ -1,0 +1,35 @@
+.bm{
+    padding: 10px;
+    background-color: aqua;
+    width:90px;
+    border:20px solid greenyellow;
+    display: inline-block;
+    margin: 30px;
+  
+  
+  }
+  ul{
+    display: inline-block;
+  }
+  #pg
+  {
+    text-decoration:none;
+    font-size: large;
+    color: black;
+  }
+  .fpos
+  {
+    position:fixed;
+    text-align: center;
+    background-color:black;
+    color: aliceblue;
+    width:1250px;
+  }
+  #dummy
+  {
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    border:10px solid rgb(11, 33, 234);
+    color: aliceblue;
+    text-align:center;
+  }
