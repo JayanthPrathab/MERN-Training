@@ -1,0 +1,35 @@
+.relative-pos{
+    position: relative;
+    margin: 10px;
+    /* left: 50px;
+    top: 50px; */
+    background-color: aquamarine;
+    z-index: 4;
+}
+.relative-pos1{
+    position: relative;
+    margin: 10px;
+    background-color: blueviolet;
+    z-index: 3;
+}
+.relative-pos2{
+    position: relative;
+    margin: 10px;
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+}
+.relative-pos3{
+    position: relative;
+    margin: 10px;
+    left: 50px;
+    top: 50px;
+    z-index: 1;
+}
+.red{
+    position: relative;
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+}
