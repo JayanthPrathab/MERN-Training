@@ -33,3 +33,23 @@
     height: 100px;
     z-index: 5;
 }
+/* .div-pos{
+    position: relative;
+    border: 1px solid;
+    border-color:steelblue;
+    margin: 500px;
+    height: 500px;
+    width: 500px;
+} */
+.pos-rel{
+    position: relative;
+    margin: 500px;
+    height: 200px;
+    width: 400px;
+    background-color: violet;
+}
+.abs{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
