@@ -5,9 +5,14 @@
     text-decoration: none;
     text-decoration-color: black;
 } */
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 header{
     background-color: slategray;
     color: beige;
+    justify-content: space-between;
+    display: flex;
 }
 img{
     margin-left: 10px;
@@ -22,11 +27,13 @@ h1{
     padding: 15px;
     margin-top: 20px;
     justify-content: space-evenly;
+    font-size: large;
  }
  .nav-link{
     color: beige;
     text-decoration: none;
     padding: 3px;
+    font-weight: bold;
  }
 .nav-link:hover{
     background-color: darkslategray;
