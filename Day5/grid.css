@@ -8,9 +8,7 @@ body{
     /* width: 500px; */
 
 }
-img{
-    margin-top: 5px;
-}
+
 .grid-items{
     text-align: center;
     margin: 10px;
@@ -35,3 +33,56 @@ img{
     
     }
 }
+img{
+    margin-top: 5px;
+    transition: transform 1s;
+}
+img:hover{
+    transform: rotate(360deg);
+}
+.animation{
+    animation-name: animationDiv;
+    background-color: bisque;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animationDiv{
+    from{
+        background-color: bisque;
+    }
+    to{
+        background-color: coral;
+    }
+}
+.anime-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid1-fade{
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    justify-self: center;
+}
+@keyframes anime1{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.75;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+} */
