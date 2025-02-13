@@ -1,0 +1,18 @@
+.img1{
+    float: left;
+}
+.img2{
+    float: right;
+}
+img{
+    /* border: 15px solid tomato; */
+    margin: 10px;
+    opacity: 1;
+}
+div{
+    float: left;
+    height: 250px;
+    width: 450px;
+    opacity: 0.5;
+    background-color: tomato;
+}

@@ -1,0 +1,61 @@
+center {
+    font-family: Arial, sans-serif;
+    background-color:rgb(197, 31, 219);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  
+  .fm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    color: #333;
+  }
+  
+  .fr {
+    width: 100%;
+  }
+  
+  .fr td {
+    padding: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fdeee3;
+  }
+  
+  input[type="radio"] {
+    accent-color:rgb(244, 43, 43);
+  }
+  
+  button {
+    background-color:rgb(91, 20, 91) ;
+    color: white;
+    border: non;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  ol {
+    display:flex;
+  }
+  li{
+    margin-right: 40px;
+  }
