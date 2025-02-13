@@ -33,12 +33,108 @@ body{
     
     }
 }
-img{
+#shield{
     margin-top: 5px;
     transition: transform 1s;
 }
-img:hover{
+#shield:hover{
     transform: rotate(360deg);
+}
+#thor{
+    margin-top: 5px;
+    transition: transform 1s;
+}
+#thor:hover{
+    transform: rotate(360deg);
+}
+#bee1{
+    position: relative;
+    animation-name: bee1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes bee1{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    12.5%{
+        top: 0px;
+        left: 100px;
+    }
+    25%{
+        top: 50px;
+        left: 100px;
+    }
+    37.5%{
+        top: 100px;
+        left: 200px;
+    }
+    50%{
+        top: 200px;
+        left: 300px;
+    }
+    62.5%{
+        top: 200px;
+        left: 100px;
+    }
+    75%{
+        top: 100px;
+        left: 50px;
+    }
+    87.5%{
+        top: 100px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+#bee2{
+    position: relative;
+    float: right;
+    animation-name: bee2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes bee2{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    12.5%{
+        top: 0px;
+        left: -100px;
+    }
+    25%{
+        top: 50px;
+        left: -100px;
+    }
+    37.5%{
+        top: 100px;
+        left: -200px;
+    }
+    50%{
+        top: 200px;
+        left: -300px;
+    }
+    62.5%{
+        top: 200px;
+        left: -100px;
+    }
+    75%{
+        top: 100px;
+        left: -50px;
+    }
+    87.5%{
+        top: 100px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
 }
 .animation{
     animation-name: animationDiv;
