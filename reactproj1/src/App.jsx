@@ -5,9 +5,10 @@ import Contact from "./components/functional components/Contact.jsx";
 import ClassComp from "./components/class components/classComp.jsx";
 import SignUp from "./components/functional components/SignUp.jsx";
 import Navbar from "./components/functional components/navbar.jsx";
+import UseEffect from "./components/functional components/UseEffect.jsx";
 import './components/css/navbar.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-
+import LoGin from "./components/functional components/loGin.jsx";
 function App(){
   return(
     
@@ -21,6 +22,8 @@ function App(){
           <Route path="/Gallery" element={<Gallery/>}></Route>
           <Route path="/Contact" element={<Contact/>}></Route>
           <Route path="/SignUp"  element={<SignUp/>}></Route>
+          <Route path="/UseEffect" element={<UseEffect/>}></Route>
+          <Route path="/loGin" element={<LoGin />}></Route>
         </Routes>
       </BrowserRouter>
     </main>
