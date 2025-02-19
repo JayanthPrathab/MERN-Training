@@ -19,7 +19,8 @@ function About(){
             <button onClick={()=>setNum(num=0)}>Reset</button>
             <br />
             Enter text<input id="v" onChange={()=>{var value = document.getElementById("v").value;setStr(str=value)}} type='text'/>
-            <h3>Current String: {str}</h3>
+            <h3>Current String: {str}</h3><br />
+            <h3>Task of the day</h3>
         </div>
     );
 }
