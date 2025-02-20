@@ -9,6 +9,10 @@ import UseEffect from "./components/functional components/UseEffect.jsx";
 import './components/css/navbar.css'
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import LoGin from "./components/functional components/loGin.jsx";
+import UseState from "./components/functional components/UseState.jsx";
+import UseEffectAPI from "./components/functional components/UseEffectAPI.jsx";
+import UseRef from "./components/functional components/UseRef.jsx";
+import UseMemo from "./components/functional components/UseMemo.jsx";
 function App(){
   return(
     
@@ -24,6 +28,10 @@ function App(){
           <Route path="/SignUp"  element={<SignUp/>}></Route>
           <Route path="/UseEffect" element={<UseEffect/>}></Route>
           <Route path="/loGin" element={<LoGin />}></Route>
+          <Route path="/UseState" element={<UseState/>}></Route>
+          <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
+          <Route path="/UseRef" element={<UseRef/>}></Route>
+          <Route path="/UseMemo" element={<UseMemo/>}></Route>
         </Routes>
       </BrowserRouter>
     </main>
