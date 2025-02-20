@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 function slowdouble(num){
-    for(var i=0;i<10000000000;i++){}
+    for(var i=0;i<100;i++){}
     return 2*num;
 }
 const UseMemo=()=>{
