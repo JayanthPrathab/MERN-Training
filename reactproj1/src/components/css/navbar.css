@@ -31,10 +31,11 @@ li:hover{
 }
 .dropdown{
     padding: 0;
-    
 }
 .dropdown-list{
-    top: 10px;
+    position: absolute;
+
+    top: 20px;
     list-style-type: none;
     background-color: cornflowerblue;
     border-radius: 10px;

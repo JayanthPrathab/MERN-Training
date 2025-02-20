@@ -19,7 +19,7 @@ const UseMemo=()=>{
             <h2>Number Box</h2>
             <input type="number" onChange={()=>{setNum(num+1)}} /> <br />
             <h2>Number: {num}</h2> 
-            <h2>Double Number: {double(num)}</h2> 
+            {/* <h2>Double Number: {double(num)}</h2>  */}
             <button onClick={()=>{setTheme(!theme)}}>Change Theme</button>
         </div>
     );
