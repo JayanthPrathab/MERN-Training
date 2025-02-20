@@ -1,4 +1,4 @@
-import Home from "./components/functional components/home";
+import Home from "./components/functional components/Home.jsx";
 import About from "./components/functional components/About";
 import Gallery from "./components/functional components/Gallery.jsx";
 import Contact from "./components/functional components/Contact.jsx";
