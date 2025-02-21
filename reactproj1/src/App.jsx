@@ -14,7 +14,7 @@ import UseEffectAPI from "./components/functional components/UseEffectAPI.jsx";
 import UseRef from "./components/functional components/UseRef.jsx";
 import UseMemo from "./components/functional components/UseMemo.jsx";
 import UseCallback from "./components/functional components/UseCallback.jsx";
-import UsecustomHook from "./components/functional components/UseCustomHook.jsx";
+import UsecustomHook from "./components/functional components/UsecustomHook.jsx";
 import HoC from "./components/functional components/HoC/HoC.jsx";
 import './App.css';
 function App(){
