@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SignUp() {
   return (
     <div>
-      <div class="outerbox">
+      <div className="outerbox">
         <h2>SignUp</h2>
         <form action="">
           Email

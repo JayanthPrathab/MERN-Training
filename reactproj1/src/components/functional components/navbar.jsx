@@ -8,16 +8,16 @@ const navbar = () => {
     <header>
       <nav>
         <li>
-          <Link class="link" to="/Home">Home</Link>
+          <Link className="link" to="/Home">Home</Link>
         </li>
         <li>
-          <Link class="link" to="/About">About</Link>
+          <Link className="link" to="/About">About</Link>
         </li>
         <li>
-          <Link class="link" to="/Gallery">Gallery</Link>
+          <Link className="link" to="/Gallery">Gallery</Link>
         </li>
         
-          <div class="dropdown" onMouseLeave={() => {
+          <div className="dropdown" onMouseLeave={() => {
             setDropdown(!dropdown1);
           }}
           onMouseEnter={() => {
@@ -26,26 +26,33 @@ const navbar = () => {
 
               Hooks</span>
               {dropdown1 &&
-            (<ol class="dropdown-list">
-              <li><Link class="link" to="/UseState">UseState</Link></li>
+            (<ol className="dropdown-list">
+              <li><Link className="link" to="/UseState">UseState</Link></li>
               <li>
-                <Link class="link" to="/UseEffect">
+                <Link className="link" to="/UseEffect">
                   UseEffect
                 </Link>
               </li>
-              <li><Link class="link" to="/UseEffectAPI">UseEffectAPI</Link></li>
-              <li><Link class="link" to="/UseRef">UseRef</Link></li>
-              <li><Link class="link" to="/UseMemo">UseMemo</Link></li>
+              <li><Link className="link" to="/UseEffectAPI">UseEffectAPI</Link></li>
+              <li><Link className="link" to="/UseRef">UseRef</Link></li>
+              <li><Link className="link" to="/UseMemo">UseMemo</Link></li>
+              <li><Link className="link" to="/UseCallback">UseCallback</Link></li>
+              <li><Link className="link" to="/UseCustomHook">CustomHook</Link></li>
             </ol>)    }
           
         </div>
         <li>
-          <Link class="link" to="/Contact">
+          <Link className="link" to="/hoc">
+            HoC
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="/Contact">
             Contact
           </Link>
         </li>
         <li>
-          <Link class="link" to="/SignUp">
+          <Link className="link" to="/SignUp">
             SignUp
           </Link>
         </li>

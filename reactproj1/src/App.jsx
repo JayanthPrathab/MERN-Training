@@ -13,6 +13,10 @@ import UseState from "./components/functional components/UseState.jsx";
 import UseEffectAPI from "./components/functional components/UseEffectAPI.jsx";
 import UseRef from "./components/functional components/UseRef.jsx";
 import UseMemo from "./components/functional components/UseMemo.jsx";
+import UseCallback from "./components/functional components/UseCallback.jsx";
+import UsecustomHook from "./components/functional components/useCustomHook.jsx";
+import HoC from "./components/functional components/HoC/HoC.jsx";
+import './App.css';
 function App(){
   return(
     
@@ -32,6 +36,9 @@ function App(){
           <Route path="/UseEffectAPI" element={<UseEffectAPI/>}></Route>
           <Route path="/UseRef" element={<UseRef/>}></Route>
           <Route path="/UseMemo" element={<UseMemo/>}></Route>
+          <Route path="/UseCallback" element={<UseCallback/>}></Route>
+          <Route path="/UseCustomHook" element={<UsecustomHook/>}></Route>
+          <Route path="/hoc" element={<HoC />}></Route>
         </Routes>
       </BrowserRouter>
     </main>
