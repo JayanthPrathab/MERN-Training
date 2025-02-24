@@ -2,7 +2,7 @@
     margin: 0; 
     padding: 0 ;
 } */
-span:hover{
+.spa:hover{
     background-color:wheat;
     height: 20px;
     border-radius: 10px;

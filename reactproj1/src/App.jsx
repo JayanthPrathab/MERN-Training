@@ -17,6 +17,11 @@ import UseCallback from "./components/functional components/UseCallback.jsx";
 import UsecustomHook from "./components/functional components/UsecustomHook.jsx";
 import HoC from "./components/functional components/HoC/HoC.jsx";
 import './App.css';
+import Memo from "./components/functional components/Memoization/Memo.jsx";
+import Lazyloadingandsuspense from "./components/functional components/Memoization/Lazyloadingandsuspense.jsx";
+import StudentRes from "./components/functional components/ContextAPI/StudentRes.jsx";
+import CoE from "./components/functional components/ContextAPI/CoE.jsx";
+import Exam from "./components/functional components/ContextAPI/Exam.jsx";
 function App(){
   return(
     
@@ -25,7 +30,7 @@ function App(){
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/Home" element={<Home/>}></Route>
           <Route path="/About" element={<About/>}></Route>
           <Route path="/Gallery" element={<Gallery/>}></Route>
           <Route path="/Contact" element={<Contact/>}></Route>
@@ -39,6 +44,9 @@ function App(){
           <Route path="/UseCallback" element={<UseCallback/>}></Route>
           <Route path="/UseCustomHook" element={<UsecustomHook/>}></Route>
           <Route path="/hoc" element={<HoC />}></Route>
+          <Route path="/Memo" element={<Memo />}></Route>
+          <Route path="/lazy" element={<Lazyloadingandsuspense/>}></Route>
+          <Route path="/result" element={<Exam />}></Route>
         </Routes>
       </BrowserRouter>
     </main>

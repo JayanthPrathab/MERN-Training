@@ -22,7 +22,7 @@ const navbar = () => {
           }}
           onMouseEnter={() => {
               setDropdown(!dropdown1);
-            }}><span>
+            }}><span className="spa">
 
               Hooks</span>
               {dropdown1 &&
@@ -38,6 +38,7 @@ const navbar = () => {
               <li><Link className="link" to="/UseMemo">UseMemo</Link></li>
               <li><Link className="link" to="/UseCallback">UseCallback</Link></li>
               <li><Link className="link" to="/UseCustomHook">CustomHook</Link></li>
+              <li><Link className="link" to="/result">Prop Drilling</Link></li>
             </ol>)    }
           
         </div>
@@ -51,6 +52,20 @@ const navbar = () => {
             Contact
           </Link>
         </li>
+        <div className="dropdown" onMouseLeave={() => {
+            setDropdown(!dropdown1);
+          }}
+          onMouseEnter={() => {
+              setDropdown(!dropdown1);
+            }}>
+        <li className="spa">
+            Memoization
+            <ol className="dropdown-list">
+              <li><Link className="link" to="/Memo"> Memo</Link></li>
+              <li><Link className="link" to="/lazy"> Lazy</Link></li>
+            </ol>
+        </li>
+        </div>
         <li>
           <Link className="link" to="/SignUp">
             SignUp
