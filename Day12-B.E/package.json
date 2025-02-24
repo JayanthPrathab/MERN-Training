@@ -1,0 +1,17 @@
+{
+  "name": "day12-b.e",
+  "version": "1.0.0",
+  "description": "\"This is a backend repo of reactproj1\"",
+  "license": "ISC",
+  "author": "Jayanth Prathab",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
