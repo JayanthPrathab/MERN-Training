@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Home from './components/home';
+import Home from './components/Home';
 import Project from './components/Project';
 import Skill from './components/Skill';
 import './components/css/navbar.css';
