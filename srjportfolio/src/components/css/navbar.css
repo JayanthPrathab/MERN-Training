@@ -1,0 +1,18 @@
+.link{
+    text-decoration: none;
+    color:midnightblue;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 60px;
+    font-size: larger;
+}
+.leftnav{
+    float: left;
+}
+.rightnav{
+    float: right;
+    margin-right: 30px;
+}

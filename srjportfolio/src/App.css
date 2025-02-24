@@ -1,0 +1,55 @@
+.bgimg{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: darkgray; */
+    background-color:wheat;
+    height: 800px;
+    width: 100%;
+}
+.ico{
+    height: 75px;
+    width: 75px;
+}
+.code{
+    display: flex;
+    justify-content: space-evenly ;
+}
+.name{
+    margin-bottom: 60px;
+    padding-top: 25px;
+}
+.projimg{
+    height: 175px;
+    width: 225px;
+}
+.schimg{
+    height: 200px;
+    width: 400px;
+    border-radius: 50%;
+}
+.hcode{
+    margin-bottom: 40px;
+}
+.comp{
+    text-align: center;
+}
+.projcont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.proj1{
+    background-color: slateblue;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+}
+.proj2{
+    background-color:slateblue;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+}
+h2{
+    margin-bottom: 40px;
+}
