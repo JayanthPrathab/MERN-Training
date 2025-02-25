@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mdb = require("mongoose");
+const bcrypt=require('bcrypt');
 const Signup = require("./models/signupSchema");
 dotenv.config();
 
@@ -25,16 +26,16 @@ app.get("/", (req, res) => {
   res.sendFile("D:\\MERN Stack\\Day5\\grid.html");
 });
 
-app.post("/signup", (req, res) => {
+app.post("/signup", async(req, res) => {
   try {
-    const {firstName,lastName,email,password,phoneNumber} = req.body
-    
+    const {firstName,lastName,email,password,mobile} = req.body
+    const hashedpassword= await bcrypt.hash(password,10);
     const newSignup = new Signup({
-      firstName: "Jayanth",
-      lastName: "Prathab",
-      email: "srjayanth2004@gmail.com",
-      password: "hello",
-      mobile: 7010901113,
+      firstName: "Mohana",
+      lastName: "Priyan.T",
+      email: "monik@sjit.ac.in",
+      password: "mephisto2005",
+      mobile: 9361254364,
     })
     newSignup.save();
     console.log("Signup successful");
@@ -44,6 +45,8 @@ app.post("/signup", (req, res) => {
     res.status(201).json({ message: "Signup unsuccessful", isSignup: false });
   }
 });
+
+
 
 app.listen(PORT, () => {
   console.log("Server started successfully");
