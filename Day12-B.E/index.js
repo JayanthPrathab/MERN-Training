@@ -46,7 +46,30 @@ app.post("/signup", async(req, res) => {
   }
 });
 
-
+app.post('/login', async(req,res)=>{
+    try {
+        const { email, password } = req.body;
+    
+        // Check if user exists
+        const user = await Signup.findOne({ "email":'srjayanth2004@gmail.com' });
+        if (!user) {
+          return res.status(400).json({ message: "User not found", isLogin: false });
+        }
+    
+        // Compare passwords
+        const isMatch = await bcrypt.compare(password, user.password);
+        if (!isMatch) {
+          return res.status(400).json({ message: "Invalid credentials", isLogin: false });
+        }
+    
+        console.log("Login successful");
+        res.status(200).json({ message: "Login Successful", isLogin: true });
+    
+      } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: "Login failed", isLogin: false });
+      }
+})
 
 app.listen(PORT, () => {
   console.log("Server started successfully");
