@@ -46,7 +46,7 @@ function App(){
           <Route path="/hoc" element={<HoC />}></Route>
           <Route path="/Memo" element={<Memo />}></Route>
           <Route path="/lazy" element={<Lazyloadingandsuspense/>}></Route>
-          <Route path="/result" element={<Exam />}></Route>
+          <Route path="/result" element={<StudentRes />}></Route>
         </Routes>
       </BrowserRouter>
     </main>
