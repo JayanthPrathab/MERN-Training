@@ -25,7 +25,7 @@ mdb
 
 app.get("/", (req, res) => {
     console.log("first")
-  res.sendFile("D:\\MERN Stack\\Day5\\grid.html");
+  res.sendFile("<h1>BackEnd Server Active</h1>");
 });
 
 app.post("/signup", async(req, res) => {
