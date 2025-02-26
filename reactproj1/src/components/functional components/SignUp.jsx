@@ -11,7 +11,7 @@ function SignUp() {
   const [mobile,setMob]=useState();
   const handleSignup=(event)=>{
     event.preventDefault();  
-    axios.post("http://localhost:3001/signup",{
+    axios.post("https://mern-training-2-lpvs.onrender.com/signup",{
     firstName:firstName,
     lastName:lastName,
     email:email,
