@@ -8,7 +8,11 @@ dotenv.config();
 
 
 const app = express();
-app.use(cors())
+app.use(cors(
+  {
+    origin: 'https://mern-training-srj.vercel.app/'
+  }
+))
 app.use(express.json())
 const PORT = 3001;
 
