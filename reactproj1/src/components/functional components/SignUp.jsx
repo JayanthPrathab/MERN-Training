@@ -17,6 +17,7 @@ function SignUp() {
     email:email,
     password:pass,
     mobile:mobile,});
+    alert("Signup Successful");
   }
   return (
     <div>
