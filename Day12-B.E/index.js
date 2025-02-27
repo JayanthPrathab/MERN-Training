@@ -8,20 +8,14 @@ dotenv.config();
 
 
 const app = express();
-app.use(cors(
-  {
-    origin:'https://mern-training-srj.vercel.app/',
-    methods:['GET','POST','PUT','DELETE'],
-    credentials: true
-  }
-))
+app.use(cors())
 app.use(express.json())
 const PORT = 3001;
 
 // console.log(process.env.MONGODB_URL);
-
+const MONGODB_URL=process.env.MONGODB_URL
 mdb
-  .connect(process.env.MONGODB_URL)
+  .connect(MONGODB_URL)
   .then(() => {
     console.log("Connection sucessfull");
   })
