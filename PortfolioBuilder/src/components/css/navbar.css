@@ -1,0 +1,40 @@
+.navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link{
+    text-decoration: none;
+    color: #333;
+}
+header{
+    padding: 20px;
+}
+.logo{
+    height: 50px;
+    width: 60px;
+}
+.hamburgerico{
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburgerico{
+        float: right;
+        display: block;
+    }
+}
+
+
