@@ -6,8 +6,8 @@ function Signup() {
   return (
     <div>
       <div className="outerbox">
-        <h2>SignUp</h2>
-        <form>
+        <h2>SignUp</h2> <br />
+        <form className="form">
           First Name
           <br />
           <input />

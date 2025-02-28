@@ -10,7 +10,7 @@ const Navbar = () => {
                 
                     <li>Features & Benifits</li>
                     <li>Templates</li>
-                    <li>Plans & Pricing</li>
+                    <li><Link className='link' to='/plans'>Plans & Pricing</Link></li>
                     <li>Help</li>
                     <li><Link className="link" to="/signup">Signup</Link></li>
                 

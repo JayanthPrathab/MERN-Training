@@ -1,0 +1,18 @@
+.planCont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.gridit{
+    border: 5px solid white; padding: 20px;
+    background-color: thistle;
+    height: 300px;
+}
+ul{
+    list-style-type: none;
+}
+.pla{
+    margin-left: 10px;
+}
+.table{
+    text-align: center;
+}

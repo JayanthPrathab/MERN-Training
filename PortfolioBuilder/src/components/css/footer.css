@@ -1,3 +1,9 @@
+
 .container{
     display: flex;
+    justify-content: space-evenly;
+}
+.copyRight{
+    text-align: center;
+    margin-bottom: 40px;
 }
