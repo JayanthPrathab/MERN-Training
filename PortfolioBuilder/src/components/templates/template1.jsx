@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import '../templates/template1.css';
 
 const template1 = () => {
