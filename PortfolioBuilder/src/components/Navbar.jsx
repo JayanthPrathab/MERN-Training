@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li><img src={port} className="logo" /></li>
                 
                     <li>Features & Benifits</li>
-                    <li>Templates</li>
+                    <li><Link className='link' to='/template'>Templates</Link></li>
                     <li><Link className='link' to='/plans'>Plans & Pricing</Link></li>
                     <li>Help</li>
                     <li><Link className="link" to="/signup">Signup</Link></li>

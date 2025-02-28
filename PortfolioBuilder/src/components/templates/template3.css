@@ -1,0 +1,67 @@
+.portfolio-template3 {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sidebar {
+    background: #333;
+    color: white;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  
+  .sidebar p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .main-content {
+    background: #ffffff;
+    padding: 30px;
+    width: 70%;
+  }
+  
+  .main-content section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .main-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .main-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .main-content ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .main-content ul li:before {
+    content: '\2022';
+    color: #4A90E2;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

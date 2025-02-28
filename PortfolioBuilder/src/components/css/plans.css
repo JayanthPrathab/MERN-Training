@@ -3,15 +3,21 @@
     grid-template-columns: repeat(3,1fr);
 }
 .gridit{
-    border: 5px solid white; padding: 20px;
+    border: 5px solid white; 
+    padding: 20px;
     background-color: thistle;
     height: 300px;
+    transition: 1s ease;
+}
+.gridit:hover{
+    transform: scale(1.05);
 }
 ul{
     list-style-type: none;
 }
 .pla{
     margin-left: 10px;
+    margin-right: 10px;
 }
 .table{
     text-align: center;
