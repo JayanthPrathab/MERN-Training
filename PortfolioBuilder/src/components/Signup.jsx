@@ -15,7 +15,7 @@ function Signup() {
       firstName:firstName,
       lastName:lastName,
       email:email,
-      password:pass,
+      password:password,
       mobile:mobile
     })  
     alert("Signup successful!!! Now Login");
