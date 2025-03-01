@@ -7,7 +7,7 @@ function Signup() {
   var [firstName,setFN]=useState("");
   var [lastName,setLN]=useState("");
   var [email,setEmail]=useState("");
-  var [pass,setPass]=useState("");
+  var [password,setPass]=useState("");
   var [mobile,setMob]=useState();
   const handleSignin=(event)=>{
     event.preventDefault();
