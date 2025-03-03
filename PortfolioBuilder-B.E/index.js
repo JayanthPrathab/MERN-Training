@@ -56,7 +56,7 @@ app.post('/login',async(req,res)=>{
   console.log("welcome to login");
   try{
     const {email,password}=req.body;
-    const existingUser=await Signup.findOne({email :email});
+    const existingUser=await Signup.findOne({email:email});
     console.log(existingUser);
     if(existingUser){
       const isValidpass= await bcrypt.compare(password,existingUser.password);
