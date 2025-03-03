@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import axios from 'axios';
 import '../components/css/Signup.css';
+
 // import LoGin from './loGin';
 function Signup() {
   var [firstName,setFN]=useState("");
@@ -9,6 +10,7 @@ function Signup() {
   var [email,setEmail]=useState("");
   var [password,setPass]=useState("");
   var [mobile,setMob]=useState();
+  const navigate=useNavigate();
   const handleSignin=(event)=>{
     event.preventDefault();
     axios.post("https://portfolio-builder-yssn.onrender.com/signup",{
