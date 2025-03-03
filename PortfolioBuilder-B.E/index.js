@@ -7,11 +7,12 @@ const Signup= require('./Models/signupSchema');
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  origin: 'https://portfolio-builder-woad.vercel.app/',
-  methods: 'GET,POST,PUT,DELETE',
-  credentials: true,
-}));
+const corsptions={
+  origin:'https://portfolio-builder-woad.vercel.app/',
+  methods:['GET','POST','PUT'],
+  credentials:true
+}
+app.use(cors(corsptions));
 app.use(express.json());
 const port = 3001;
 mongoose
