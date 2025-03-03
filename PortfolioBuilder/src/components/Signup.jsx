@@ -11,7 +11,7 @@ function Signup() {
   var [mobile,setMob]=useState();
   const handleSignin=(event)=>{
     event.preventDefault();
-    axios.post('https://portfolio-builder-yssn.onrender.com',{
+    axios.post('https://portfolio-builder-yssn.onrender.com/signup',{
       firstName:firstName,
       lastName:lastName,
       email:email,
