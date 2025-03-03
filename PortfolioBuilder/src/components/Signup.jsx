@@ -11,13 +11,13 @@ function Signup() {
   var [mobile,setMob]=useState();
   const handleSignin=(event)=>{
     event.preventDefault();
-    axios.post('https://portfolio-builder-yssn.onrender.com/signup',{
+    axios.post("https://portfolio-builder-yssn.onrender.com/signup",{
       firstName:firstName,
       lastName:lastName,
       email:email,
       password:password,
       mobile:mobile
-    })  
+    });
     alert("Signup successful!!! Now Login");
   }
   return (
