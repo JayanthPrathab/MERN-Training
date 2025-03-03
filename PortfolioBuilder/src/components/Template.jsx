@@ -4,15 +4,20 @@ const Template=()=>{
         <div>
             <br /><br />
             <div className="tempCont">
+            <Link className="link" to='/template1raw'>
                 <div className="tempit">
-                    <h5> <Link className="link" to='/template1raw'>Visionary</Link></h5>
+                    <h5> Visionary</h5>
                 </div>
+            </Link>
+            <Link className="link" to='/template2raw'>
                 <div className="tempit">
-                    <h5><Link className="link" to='/template2raw'>Chronicle</Link></h5>
+                    <h5>Chronicle</h5>
                 </div>
+            </Link>
+            <Link className="link" to='/template3raw'>
                 <div className="tempit">
-                    <h5><Link className="link" to='/template3raw'>Genesis</Link></h5>
-                </div>
+                    <h5>Genesis</h5>
+                </div></Link>
             </div>
         </div>
     );
