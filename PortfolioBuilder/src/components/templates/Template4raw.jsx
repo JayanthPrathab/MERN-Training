@@ -41,7 +41,7 @@ const Template4raw = () => {
         name:name,
         about:about,
         experience:experience,
-        skills:skills,
+        skills:selectedSkills,
     })
   }
   return (
