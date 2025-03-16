@@ -13,7 +13,7 @@ import Template2 from "./components/templates/template2";
 import Template3raw from "./components/templates/Template3raw";
 import Template3 from "./components/templates/template3";
 import Template4raw from "./components/templates/Template4raw";
-import Template4 from "./components/templates/template4";
+import Template4 from "./components/templates/Template4";
 import "./components/css/navbar.css";
 import "./components/css/footer.css";
 import "./components/css/plans.css";
