@@ -1,0 +1,80 @@
+.portfolio-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .portfolio-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .portfolio-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .portfolio-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .resume-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 6px;
+  }
+  
+  .resume-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .resume-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .resume-button {
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  
+  .resume-button:hover {
+    background: #0056b3;
+  }
+  

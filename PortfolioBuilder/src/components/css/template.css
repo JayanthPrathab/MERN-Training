@@ -11,7 +11,7 @@
     background-color: thistle;
     border: 5px solid white;
     transition: 1s ease;
-    height: 300px;
+    height: 225px;
 }
 .tempit:hover{
     background-color:blueviolet;
