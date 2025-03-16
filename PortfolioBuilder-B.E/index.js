@@ -4,6 +4,7 @@ const mdb = require("mongoose");
 const bcrypt=require('bcrypt');
 const cors=require('cors');
 const Signup = require("./Models/signupSchema");
+const User = require("./Models/userDet");
 dotenv.config();
 
 const app = express();
@@ -76,6 +77,26 @@ app.post('/login',async(req,res)=>{
   catch(error){
     console.log("User not found!!! Signup First!!!")
     res.status(201).json({message:"Login error", isLogin:false})
+  }
+})
+
+app.post('/template4raw',(req,res)=>{
+  console.log("Collecting your Data");
+  try{
+    const {name,about,experience,skills}=req.body;
+    const uD = new User({
+      name:name,
+      about:about,
+      experience:experience,
+      skills:skills
+    });
+    uD.save();
+    console.log("Data added successfully");
+    res.status(201).json({ message: "Data added Successfully", isAdded: true });
+  }
+  catch(err){
+    console.log(err);
+    res.status(201).json({message:"Try Again" ,isAdded:false});
   }
 })
 
