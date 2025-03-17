@@ -21,6 +21,7 @@ function Signup() {
       mobile:mobile
     });
     alert("Signup successful!!! Now Login");
+    navigate('/loGin');
   }
   return (
     <div>

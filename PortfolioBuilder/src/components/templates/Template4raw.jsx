@@ -55,7 +55,7 @@ const Template4raw = () => {
       </center>
       <br />
       <br />
-      <h6>Enter your DETAILS below and check your result</h6>
+      <center><h6>Enter your DETAILS below and check your result</h6></center>
       <center>
         <form onSubmit={handleData}>
           Name <br />

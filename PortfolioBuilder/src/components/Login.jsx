@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login=()=>{
     var [email,setEmail]=useState("");
     var [password,setPass]=useState("");
+    const navigate=useNavigate();
     const handleLogin=(event)=>{
         event.preventDefault();
         axios.post("https://portfolio-builder-yssn.onrender.com/login",{
@@ -11,6 +13,7 @@ const Login=()=>{
             password:password
         });
         alert("Login successful!!!");
+        navigate('/');
     }
     return(
         <div className="outerbox">
