@@ -84,21 +84,38 @@ app.post('/template4raw',(req,res)=>{
   console.log("Collecting your Data");
   try{
     const {name,about,experience,skills}=req.body;
-    const uD = new User({
-      name:name,
-      about:about,
-      experience:experience,
-      skills:skills
-    });
-    uD.save();
-    console.log("Data added successfully");
-    res.status(201).json({ message: "Data added Successfully", isAdded: true });
+    const existingUser= User.findOne({name:name});
+    if(existingUser){
+      alert("User already exists!!! Try using a different name");
+    }
+    else{
+      const uD = new User({
+        name:name,
+        about:about,
+        experience:experience,
+        skills:skills
+      });
+      uD.save();
+      console.log("Data added successfully");
+      res.status(201).json({ message: "Data added Successfully", isAdded: true });
+    }
   }
   catch(err){
     console.log(err);
     res.status(201).json({message:"Try Again" ,isAdded:false});
   }
 })
+
+app.get("/template4raw", async (req, res) => {
+  try {
+    const portfolio = await User.findOne(); // Fetch latest portfolio
+    res.json(portfolio);
+    console.log(portfolio);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch portfolio data" });
+    console.log(error);
+  }
+});
 
 app.listen(PORT, () => {
   console.log("Server started successfully");
