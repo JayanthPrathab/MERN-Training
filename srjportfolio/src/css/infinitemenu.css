@@ -32,7 +32,7 @@
     -webkit-user-select:auto ;
     user-select: none;
     position: absolute;
-    word-wrap: break-word;
+    word-wrap:normal;
     white-space: normal; 
     text-align: left;
     font-weight: 900;
