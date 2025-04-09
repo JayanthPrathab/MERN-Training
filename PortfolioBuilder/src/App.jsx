@@ -14,6 +14,7 @@ import Template3raw from "./components/templates/Template3raw";
 import Template3 from "./components/templates/template3";
 import Template4raw from "./components/templates/Template4raw";
 import Template4 from "./components/templates/Template4";
+import ProtectedRoute from "./components/Protectedroute";
 import "./components/css/navbar.css";
 import "./components/css/footer.css";
 import "./components/css/plans.css";
@@ -29,20 +30,20 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/loGin" element={<Login />}></Route>
-          <Route path="/plans" element={<Plansnpricing />}></Route>
-          <Route path="/template" element={<Template/>}></Route>
-          <Route path="/template1raw" element={<Template1raw/>}></Route>
-          <Route path="/template1" element={<Template1/>}></Route>
-          <Route path="/template2raw" element={<Template2raw/>}></Route>
-          <Route path="/template2" element={<Template2/>}></Route>
-          <Route path="/template3raw" element={<Template3raw/>}></Route>
-          <Route path='/template3' element={<Template3/>}></Route>
-          <Route path='/template4raw' element={<Template4raw/>}></Route>
-          <Route path='/template4' element={<Template4/>}></Route>
+          <Route path="/plans" element={<ProtectedRoute><Plansnpricing /></ProtectedRoute>}></Route>
+          <Route path="/template" element={<ProtectedRoute><Template/></ProtectedRoute>}></Route>
+          <Route path="/template1raw" element={<ProtectedRoute><Template1raw/></ProtectedRoute>}></Route>
+          <Route path="/template1" element={<ProtectedRoute><Template1/></ProtectedRoute>}></Route>
+          <Route path="/template2raw" element={<ProtectedRoute><Template2raw/></ProtectedRoute>}></Route>
+          <Route path="/template2" element={<ProtectedRoute><Template2/></ProtectedRoute>}></Route>
+          <Route path="/template3raw" element={<ProtectedRoute><Template3raw/></ProtectedRoute>}></Route>
+          <Route path='/template3' element={<ProtectedRoute><Template3/></ProtectedRoute>}></Route>
+          <Route path='/template4raw' element={<ProtectedRoute><Template4raw/></ProtectedRoute>}></Route>
+          <Route path='/template4' element={<ProtectedRoute><Template4/></ProtectedRoute>}></Route>
           
         </Routes>
 
-        
+        <br /><br />
         <Footer />
       </BrowserRouter>
     </main>

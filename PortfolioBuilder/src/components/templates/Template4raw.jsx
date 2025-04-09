@@ -52,7 +52,7 @@ const Template4raw = () => {
       headers: {
         Authorization: `Bearer ${token}`, // 👈 Include token here
       },
-    }
+    })
     .then((res) => {
       alert(res.data.message);
     })
@@ -60,7 +60,7 @@ const Template4raw = () => {
       console.error(err);
       alert("Submission failed. Try again.");
     }
-  ));
+  );
   }
   return (
     <div>
