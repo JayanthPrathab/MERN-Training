@@ -37,12 +37,30 @@ const Template4raw = () => {
 
   const handleData=(event)=>{
     event.preventDefault();
+    const token = localStorage.getItem("token"); // Get JWT from storage
+    if (!token) {
+      alert("You must be logged in to submit data.");
+      return;
+    }
     axios.post("https://portfolio-builder-yssn.onrender.com/template4raw",{
         name:name,
         about:about,
         experience:experience,
         skills:selectedSkills,
+    },
+    {
+      headers: {
+        Authorization: `Bearer ${token}`, // 👈 Include token here
+      },
+    }
+    .then((res) => {
+      alert(res.data.message);
     })
+    .catch((err) => {
+      console.error(err);
+      alert("Submission failed. Try again.");
+    }
+  ));
   }
   return (
     <div>

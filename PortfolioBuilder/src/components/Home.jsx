@@ -1,4 +1,5 @@
 import BlurText from './Animations/BlurText';
+import clock from '../assets/time.png';
 const Home=()=>{
     return(
         <div>
@@ -8,7 +9,8 @@ const Home=()=>{
           animateBy="words"
           direction="top"
           className="infblur"
-        /></div>
+        />
+        </div>
     );
 }
 export default Home;
