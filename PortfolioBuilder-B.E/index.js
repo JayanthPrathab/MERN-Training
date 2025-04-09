@@ -101,11 +101,11 @@ app.post('/login',async(req,res)=>{
   }
 })
 
-app.post('/template4raw',authenticateToken ,(req,res)=>{
+app.post('/template4raw',authenticateToken ,async(req,res)=>{
   console.log("Collecting your Data");
   try{
     const {name,about,experience,skills}=req.body;
-    const existingUser= User.findOne({name:name});
+    const existingUser= await User.findOne({name:name});
     if(existingUser){
       res.status(201).json("User already exists!!! Try using a different name");
     }
