@@ -74,7 +74,7 @@ app.post('/login',async(req,res)=>{
     const {email,password}=req.body;
     const existingUser=await Signup.findOne({email:email});
     console.log(existingUser);
-    if(existingUser){
+    if(existingUser !== null){
       const isValidpass= await bcrypt.compare(password,existingUser.password);
       console.log(isValidpass)
       if(isValidpass){
@@ -83,6 +83,7 @@ app.post('/login',async(req,res)=>{
           process.env.secret_key,
           { expiresIn: "10m" } // token valid for 2 hours
         );
+        console.log("Generated Token:", token);
         console.log(req.body);
         res.status(201).json({message:"Login successful", token: token, isLogin:true})
       }
@@ -106,7 +107,7 @@ app.post('/template4raw',authenticateToken ,(req,res)=>{
     const {name,about,experience,skills}=req.body;
     const existingUser= User.findOne({name:name});
     if(existingUser){
-      alert("User already exists!!! Try using a different name");
+      res.status(201).json("User already exists!!! Try using a different name");
     }
     else{
       const uD = new User({
