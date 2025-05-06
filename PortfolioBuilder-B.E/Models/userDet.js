@@ -5,6 +5,8 @@ const userDet=mongoose.Schema({
     about:String,
     experience:[String],
     skills:[String],
+    education:String,
+    certifications:String
 })
 
 const user_Det=mongoose.model("user",userDet);
